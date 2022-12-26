@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Home from './components/Home';
 import "./main.css";
 
 
@@ -10,7 +11,7 @@ function App() {
 
     <>
 
-    <span>App</span>
+    <Home/>
 
     </>
           
