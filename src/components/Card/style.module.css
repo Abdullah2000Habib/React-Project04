@@ -1,0 +1,55 @@
+.mainCard {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 192px;
+}
+
+.leftS {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name>:first-child {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.name>:nth-child(2) {
+    font-size: 0.7rem;
+}
+
+.leftS>:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.leftS>:nth-child(3) {
+    font-size: 0.6rem;
+    border: 1px solid var(--black);
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: fit-content;
+    text-transform: capitalize;
+
+}
+
+.imgP {
+    transform: rotate(-20deg);
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    bottom: -20%;
+}
