@@ -26,12 +26,24 @@ return (
             slidesPerGroup={1}
             spaceBetween={20}
             slidesPerView={3}
+            breakpoints={
+              {
+                856:{
+                            slidesPerView:3,
+              },
+            540:{
+                          slidesPerView:2,
+            },
+            0:{
+              slidesPerView:1,
+            }}
+            }
           >
             {
               TestimonialsData.map((item)=>{
                 return (
                 <SwiperSlide key={item.id}>
-                   <TestimonialCard  name={item.name} comment={item.comment} img={item.image}  />
+                  <TestimonialCard  name={item.name} comment={item.comment} img={item.image}  />
                 </SwiperSlide>)
               })
             } 
